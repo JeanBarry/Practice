@@ -1,10 +1,21 @@
 const test = (input, result, func) => {
   const assert = () => {
     try {
-      if (func(input) === result) {
+      const functionResult = func(input);
+
+      if (Array.isArray(result)) {
+        if (JSON.stringify(functionResult) === JSON.stringify(result)){
+          return 'Success'
+        } else {
+          return 'Fail';
+        }
+      }
+
+      if (func(input) == result) {
         return 'Success';
       }
       return 'Fail';
+      
     } catch (e) {
       console.log(`Exception ocurred`);
       return 'Fail';
