@@ -1,3 +1,5 @@
+const { test } = require('../../../tester');
+
 const input = [[-9,-9,-9,1,1,1],[0,-9,0,4,3,2],[-9,-9,-9,1,2,3],[0,0,8,6,6,0],[0,0,0,-2,0,0],[0,0,1,2,4,0]];
 
 const solution = (matrix) => {
@@ -35,8 +37,8 @@ const solution = (matrix) => {
   return Math.max(...hourglassSums);
 }
 
-const result = solution(input);
-console.log(result);
+const result = 28;
+test(input, result, solution);
 
 /* 
 
