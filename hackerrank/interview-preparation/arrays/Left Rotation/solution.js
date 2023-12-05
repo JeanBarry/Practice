@@ -1,4 +1,4 @@
-const { test } = require('../../../tester');
+const { test } = require('../../../../tester');
 
 // const solution = ({arr, rotations}) => {
 //   for (let i = 0; i < rotations; i++) {
