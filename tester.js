@@ -1,7 +1,10 @@
-const test = (input, result, func) => {
+const test = (input, result, func, debug = false) => {
   const assert = () => {
     try {
       const functionResult = func(input);
+      if (debug) {
+        console.log("Result", functionResult);
+      }
 
       if (Array.isArray(result)) {
         if (JSON.stringify(functionResult) === JSON.stringify(result)){
