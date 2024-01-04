@@ -1,0 +1,113 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #151f4f;
+  color: #ffffff;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  width: 35rem;
+  height: 6rem;
+  background-color: #1a1f49;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.analytics-content {
+  width: 50rem;
+  height: 30rem;
+  background-color: #26296a;
+  display: flex;
+}
+
+.graph {
+  display: flex;
+  align-items: center;
+  width: 25rem;
+}
+
+.graph-data {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.data-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.data-marker {
+  width: 3.8rem;
+  height: 1.5rem;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.pink {
+  background-color: #9c53ab;
+}
+
+.red {
+  background-color: #d92b2b;
+}
+
+.orange {
+  background-color: #e46736;
+}
+
+.yellow {
+  background-color: #f3f715;
+}
+
+.cyan {
+  background-color: #63f5bb;
+}
+
+@media (max-width: 400px) {
+  header {
+    width: 20rem;
+  }
+
+  .analytics-content {
+    width: 20rem;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .graph {
+    width: 300px;
+    align-items: center;
+  }
+}
