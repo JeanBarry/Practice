@@ -12,7 +12,8 @@ const clearScreen = () => {
 };
 
 const type = key => {
-  if (getScreenContent() === '0') {
+  const screenContent = getScreenContent();
+  if (screenContent === '0' || screenContent === 'Infinity') {
     screen.textContent = key;
   } else {
     screen.textContent += key;
