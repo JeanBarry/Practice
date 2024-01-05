@@ -1,0 +1,108 @@
+:root {
+  --background-color: #2D3C41;
+  --screen-color: #FEFEFE;
+  --button-color: #35444D;
+  --button-border-color: #36494F;
+  --red-color: #D71A60;
+  
+  --button-color-hover: #3c4f5a;
+  --red-color-hover: #e9286f;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.screen {
+  background-color: var(--screen-color);
+  width: 25rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.screen > p {
+  font-size: 2rem;
+}
+
+.calculator {
+  width: 25rem;
+  height: 25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0;
+  background-color: red;
+  box-shadow: 4px 15px 49px -19px rgba(0,0,0,0.59);
+  -webkit-box-shadow: 4px 15px 49px -19px rgba(0,0,0,0.59);
+  -moz-box-shadow: 4px 15px 49px -19px rgba(0,0,0,0.59);
+}
+
+button {
+  background-color: var(--button-color);
+  color: #FEFEFE;
+  border: 1px var(--button-border-color) solid;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.regular {
+  font-size: 1.5rem;
+}
+
+.big {
+  font-size: 2rem;
+}
+
+.bigger {
+  font-size: 2.5rem;
+}
+
+button:hover {
+  background-color: var(--button-color-hover);
+  transition: background-color 0.3s;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.red { 
+  background-color: var(--red-color);
+}
+
+.red:hover {
+  background-color: var(--red-color-hover);
+}
+
+@media (max-width: 400px) {
+  .screen {
+    width: 20rem;
+  }
+
+  .calculator {
+    width: 20rem;
+  }
+}
