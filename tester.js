@@ -6,7 +6,7 @@ const test = (input, result, func, debug = false) => {
         console.log("Result", functionResult);
       }
 
-      if (Array.isArray(result)) {
+      if ((Array.isArray(result) || typeof(result) === 'object') && result !== null) {
         if (JSON.stringify(functionResult) === JSON.stringify(result)){
           return 'Success'
         } else {
