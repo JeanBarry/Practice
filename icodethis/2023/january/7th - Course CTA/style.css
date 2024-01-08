@@ -1,0 +1,173 @@
+:root {
+  --body-bg-color: #100738;
+  --page-bg-color: #D6EAEB;
+  --highlight-bg-color: #C4E0D9;
+  --highlight-bg-hover-color: #dff0ec;
+  --button-bg-color: #FFA695;
+  --button-bg-hover-color:#FFBAAC;
+  --border-color: #f4f4f4;
+  --light-section-background: #DFEDEE;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: var(--page-bg-color);
+  width: 60rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  padding: 6rem 4rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: fit-content;
+}
+
+.subsection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pro-listing {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.listing-section {
+  border: 2px solid var(--border-color);
+  border-radius: 0.25rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 28rem;
+  background-color: var(--light-section-background);
+}
+
+.section-subtitle {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.padded-left {
+  padding-left: 1rem;
+}
+
+.top-margin-xxl {
+  margin-top: 5.5rem;
+}
+
+.top-margin-xl {
+  margin-top: 3rem;
+}
+
+.top-margin-lg {
+  margin-top: 2.5rem;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+}
+
+.enrollment-item {
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--page-bg-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.active {
+  background-color: var(--highlight-bg-color);
+}
+
+.enrollment-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--highlight-bg-color);
+  border-radius: 0.25rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.enrollment-details-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.pro-item {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.checkmark {
+  width: 0.7rem;
+}
+
+.cta {
+  text-align: center;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  background-color: var(--button-bg-color);
+  font-size: 1rem;
+}
+
+.cta:hover {
+  background-color: var(--button-bg-hover-color);
+}
+
+@media (max-width: 768px) {
+
+  body {
+    height: auto;
+  }
+  
+  main {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
