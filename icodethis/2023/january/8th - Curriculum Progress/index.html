@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Progress</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <section class="curriculum rounded-xl">
+      <div class="progress-bar">
+        <p class="xl-text bold">25%</p>
+        <p class="sm-text">Content<br>progress</p>
+        <progress value="25" min="0" max="100" style="visibility:hidden;height:0;width:0;">25%</progress>
+      </div>
+      <div class="curriculum-details margin-top-lg">
+        <p class="bold lg-text">Curriculum</p>
+        <div class="chapter rounded">
+          <input id="chapter-1" type="radio" name="curriculum-chapters" checked/>
+          <label class="chapter-label" for="chapter-1">
+            <p class="bold">Chapter 1</p>
+            <p>Introduction</p>
+          </label>
+        </div>
+        <div class="chapter rounded">
+          <input id="chapter-2" type="radio" name="curriculum-chapters"/>
+          <label class="chapter-label" for="chapter-2">
+            <p class="bold">Chapter 2</p>
+            <p>Information architecture</p>
+          </label>
+        </div>
+        <div class="chapter rounded">
+          <input id="chapter-3" type="radio" name="curriculum-chapters"/>
+          <label class="chapter-label" for="chapter-3">
+            <p class="bold">Chapter 3</p>
+            <p>Data and Security</p>
+          </label>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

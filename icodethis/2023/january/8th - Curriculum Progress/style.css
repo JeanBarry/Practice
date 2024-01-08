@@ -1,0 +1,134 @@
+:root {
+  --body-bg-color: #E3E2EF;
+  --container-bg-color: #FEFFFE;
+  --highlights-color: #28245F;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--body-bg-color);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 1rem;
+}
+
+.curriculum {
+  width: 22rem;
+  padding: 4rem 0;
+  background-color: var(--container-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.curriculum-details {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  background: 
+  radial-gradient(closest-side, white 79%, transparent 80% 100%), 
+  conic-gradient(var(--highlights-color) 25%, var(--body-bg-color) 0)
+}
+
+.chapter {
+  border: 1px solid rgb(194, 194, 194);
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.chapter:has(> input[type="radio"]:checked) {
+  border-color: var(--highlights-color);
+}
+
+.chapter-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input[type="radio"] {
+  width: 2rem;
+  height: 2rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 50%;
+  border: 3px solid var(--body-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  border: none;
+}
+
+input[type="radio"]:checked::after {
+  content: '\2714';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  color: #FFFFFF;
+  background-color: var(--highlights-color);
+  height: 100%;
+  width: 100%;
+}
+
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-xl {
+  border-radius: 1rem;
+}
+
+.sm-text {
+  font-size: 0.875rem;
+}
+
+.xl-text {
+  font-size: 2rem;
+}
+
+.lg-text {
+  font-size: 1.3rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.margin-top-lg {
+  margin-top: 2.5rem;
+}
+
+.margin-top-xl {
+  margin-top: 4rem;
+}
