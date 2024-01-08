@@ -21,4 +21,4 @@ const resultA = {
   b: 1,
 };
 
-test(inputA, resultA, count, true);
+test(inputA, resultA, count);
