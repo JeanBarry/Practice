@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documents App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <section class="panel">
+      <div class="header rounded">
+        <div class="close"><span>×</span></div>
+        <p class="description">Our new <span class="bold"></span>Terms of Service</span> and <span class="bold">Privacy
+            Statement</span> are
+          in effect.</p>
+      </div>
+      <div class="body rounded margin-top">
+        <div class="body-header">
+          <p class="font-xl">Documents</p>
+          <button class="action bold">
+            <div class="button-icon">&#43;</div>Add New
+          </button>
+        </div>
+        <div class="input-group margin-top rounded">
+          <label for="search" class="magnifier">
+            <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 512 512">!Font Awesome Free
+              6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright
+              2024 Fonticons, Inc.
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                fill="rgb(196, 196, 196)" />
+            </svg>
+          </label>
+          <input id="search" class="rounded" type="text" placeholder="Search documents">
+        </div>
+        <ul class="documents margin-top">
+          <li class="document">
+            <div class="document-icon-container blue">
+              <img class="document-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Microsoft_Word_2013-2019_logo.svg/1174px-Microsoft_Word_2013-2019_logo.svg.png?20221202081051"
+                alt="" srcset="">
+            </div>
+            <p>Scrumbs / Landing page copy</p>
+          </li>
+          <li class="document">
+            <div class="document-icon-container red">
+              <img class="document-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Microsoft_Office_logo_%282013%E2%80%932019%29.svg"
+                alt="logo">
+            </div>
+            <p>Scrumbs / Feature brief</p>
+          </li>
+          <li class="document">
+            <div class="document-icon-container yellow">
+              <img class="document-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="logo">
+            </div>
+            <p>Scrumbs / Logo</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
