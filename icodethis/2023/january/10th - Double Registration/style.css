@@ -1,0 +1,173 @@
+:root {
+  --bg-color-left: #F1565F;
+  --bg-color-right: #DF295D;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #e0e0e0;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+section {
+  position: relative;
+  background: linear-gradient(to right, var(--bg-color-left), var(--bg-color-right));
+  width: 45rem;
+  height: 15rem;
+  padding: 2rem;
+  overflow: hidden;
+  box-shadow: 1px 21px 59px -14px rgba(223,41,93,0.59);
+  -webkit-box-shadow: 1px 21px 59px -14px rgba(223,41,93,0.59);
+  -moz-box-shadow: 1px 21px 59px -14px rgba(223,41,93,0.59);
+}
+
+button {
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.white-button {
+  width: 15rem;
+  color: #000000;
+  border: 1px solid transparent;
+  background-color: #FFFFFF;
+  transition: all 0.2s;
+}
+
+.white-button:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.2s;
+}
+
+.button-container {
+  height: 100%;
+  margin-top: 4rem;
+}
+
+.transparent-button {
+  width: 10rem;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  transition: all 0.2s;
+}
+
+.transparent-button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.2s;
+}
+
+.upper-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.lower-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.lower-banner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.description {
+  max-width: 50ch;
+}
+
+.font-xl {
+  font-size: 1.5rem;
+}
+
+.font-sm {
+  font-size: 0.875rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.rounded {
+  border-radius: 0.3rem;
+}
+
+.white-font {
+  color: #FFFFFF;
+}
+
+.arrow {
+  position: absolute;
+  left: -1rem;
+  bottom: 0;
+  width: 0; 
+  height: 0; 
+  border-left: 3rem solid transparent;
+  border-right: 3rem solid transparent;
+}
+
+.light-arrow {
+  opacity: 0.2;
+  border-bottom: 9rem solid #e5e5e5;
+}
+
+.dark-arrow {
+  opacity: 0.1;
+  border-bottom: 9rem solid #852e2e;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 30rem;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+@media (max-width:400px) {
+  section {
+    width: 20rem;
+  }
+
+  .lower-banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
