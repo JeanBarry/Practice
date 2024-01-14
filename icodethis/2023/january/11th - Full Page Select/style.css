@@ -20,12 +20,23 @@ body {
 }
 
 main {
+  position: relative;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to bottom, var(--body-bg-color) 0%, var(--body-bg-color) 50%, var(--btm-section-high-color) 50%, var(--btm-section-low-color) 100%);
   display: flex;
   flex-direction: column;
-  padding: 8rem;
+  justify-content: center;
+  padding: 0 8rem;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background: linear-gradient(to bottom, var(--body-bg-color) 0%, var(--body-bg-color) 50%, var(--btm-section-high-color) 50%, var(--btm-section-low-color) 100%);
 }
 
 .heading {
@@ -34,8 +45,11 @@ main {
   justify-content: space-between;
 }
 
+.heading-title {
+  font-size: 2.5rem;
+}
+
 .heading-text {
-  padding: 2rem;
   z-index: 1;
   position: relative;
 }
@@ -53,13 +67,20 @@ main {
   border: 1.5px solid rgb(238, 238, 238);
   font-size: 2rem;
   color: var(--btm-section-low-color);
+  transition: background-color 0.2s, border 0.2s;
+}
+
+.heading-button:hover {
+  background-color: rgb(236, 236, 236);
+  border: 1.5px solid rgb(162, 162, 162);
+  transition: background-color 0.2s, border 0.2s;
 }
 
 .heading-background {
   position: absolute;
-  top: -2.5rem;
-  left: 1rem;
-  font-size: 13rem;
+  left: 0;
+  top: -4.5rem;
+  font-size: 12rem;
   font-weight: 300;
   color: #f2f2f2;
   z-index: -1;
@@ -73,7 +94,7 @@ main {
 .cards {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 3rem;
   width: 100%;
   display: flex;
   gap: 2rem;
@@ -82,7 +103,7 @@ main {
 .card {
   background-color: var(--body-bg-color);
   width: 20rem;
-  height: 20rem;
+  padding: 2rem;
   border: 1.5px solid #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -93,17 +114,28 @@ main {
 
 .active-card {
   border: 1.5px solid var(--btm-section-low-color);
+  box-shadow: 10px 10px 53px -18px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 53px -18px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 53px -18px rgba(0,0,0,0.75);
 }
 
 .image-container {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 0.5rem solid #f6f6f6;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.card-top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .card-image {
@@ -115,7 +147,7 @@ main {
 
 .card-button {
   margin-top: 2rem;
-  width: 10rem;
+  width: 100%;
   padding: 1rem;
   font-size: 1rem;
 }
@@ -126,10 +158,23 @@ main {
   color: #dbdbdb;
 }
 
+.regular-button:hover {
+  background-color: #fbc596;
+  border-color: #fbc596;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
 .active-button {
   background-color: var(---btn-color);
   border: 1.5px solid transparent;
   color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+.active-button:hover {
+  background-color: rgb(139, 178, 252);
+  transition: background-color 0.2s;
 }
 
 .lower-section {
@@ -147,6 +192,12 @@ main {
   align-items: center;
   border: 1px solid rgba(237, 237, 237, 0.5);
   height: 3.5rem;
+  transition: background-color 0.2s;
+}
+
+.lower-section-button:hover {
+  background-color: #eeeeee28;
+  transition: background-color 0.2s;
 }
 
 .button-section {
@@ -173,14 +224,93 @@ main {
   font-size: 1.5rem;
 }
 
-.font-xl {
-  font-size: 2.5rem;
-}
-
 .bold {
   font-weight: 700;
 }
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+@media (max-width: 650px) {
+
+  main{
+    padding: 2rem 2rem;
+    height: fit-content;
+  }
+
+  .heading {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .heading-title {
+    font-size: 1.5rem !important;
+  }
+
+  .heading-button-container {
+    flex-direction: row;
+  }
+
+  .heading-background {
+    font-size: 10rem;
+    top: -3rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cards {
+    justify-content: center;
+  }
+
+  .card {
+    width: 25rem;
+    height: 25rem;
+    justify-content: space-around;
+  }
+
+  .image-container {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 700px) {
+
+  .heading-title {
+    font-size: 2rem !important;
+  }
+
+  .heading-background {
+    font-size: 9rem;
+    top: -3rem;
+  }
+
+  .cards {
+    margin-top: 2rem;
+  }
+
+  .font-lg {
+    font-size: 1.3rem;
+  }
+
+  .lower-section {
+    margin-top: 2rem;
+  }
 }
