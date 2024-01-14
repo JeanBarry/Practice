@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Language Learn</title>
+  <style>
+    .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: 
+    radial-gradient(farthest-side, white 92%, transparent 93% 100%), 
+    conic-gradient(rgb(59 130 246) 70%, rgb(234, 234, 234) 0)
+  }
+  </style>
+</head>
+
+<body>
+  <main class="bg-blue-950 flex flex-col gap-2 relative lg:h-screen">
+    <section
+      class="flex flex-col items-center lg:w-[30rem] bg-white lg:rounded-lg pt-4 lg:pt-6 lg:absolute right-20 top-12">
+      <div class="py-8 flex flex-col gap-8 items-center">
+        <div class="w-[14rem] bg-gray-200 rounded-full h-1">
+          <div class="bg-blue-500 h-1 rounded-full" style="width: 75%"></div>
+        </div>
+        <p class="font-bold text-lg">Which of these is "You eat pasta"?</p>
+        <ul class="flex flex-col gap-6">
+          <li class="flex gap-2 items-center"><input class="h-6 w-6" type="radio" name="question" id="answer-1"><label
+              for="answer-1">El caballo es pequeño</label></li>
+          <li class="flex gap-2 items-center"><input class="h-6 w-6" type="radio" name="question" id="answer-2"><label
+              for="answer-2">Tú comes pasta</label></li>
+          <li class="flex gap-2 items-center"><input class="h-6 w-6" type="radio" name="question" id="answer-3"><label
+              for="answer-3">Él come pan</label></li>
+        </ul>
+      </div>
+      <div class="border-t-2 border-slate-100 w-full text-center p-2 mt-20 cursor:point">
+        <p class="text-sm text-slate-600 cursor-pointer hover:text-slate-500">Skip this question</p>
+      </div>
+      <button
+        class="bg-gradient-to-br from-orange-600 to-orange-300 w-full p-8 lg:p-12 text-white font-bold hover:opacity-90 lg:rounded-b-lg">Submit</button>
+    </section>
+
+    <section class="flex flex-col gap-2 items-center justify-center lg:w-[15rem] lg:h-60 bg-white lg:rounded-lg py-6 px-14 shadow-2xl lg:absolute bottom-5 right-[32rem]">
+      <div class="progress-bar">
+        <div class="w-[50%] h-[50%]">
+          <img width="100%" height="100%" src="https://img.icons8.com/pulsar-color/96/tree.png" alt="tree"/>
+        </div>
+        <progress value="25" min="0" max="100" style="visibility:hidden;height:0;width:0;">25%</progress>
+      </div>
+      <p class="font-bold">Nature</p>
+      <button
+        class="w-full p-2 text-black font-bold text-sm font-medium border border-orange-400 rounded-lg">Continue</button>
+    </section>
+
+    <section class="flex flex-col gap-2 lg:w-[25rem] bg-white lg:rounded-lg py-4 lg:p-8 lg:absolute top-14 right-[38rem]">
+      <p class="font-bold text-lg mx-4 lg:mx-0">Select a tier</p>
+      <div class="flex justify-between items-center lg:gap-2 bg-indigo-100 p-6 lg:rounded-lg">
+        <div>
+          <p class="font-bold">$5/month</p>
+          <p class="text-sm">A significant contribution</p>
+        </div>
+        <button
+          class="w-20 p-2 text-white font-bold text-sm font-medium bg-gradient-to-br from-orange-600 to-orange-300 hover:opacity-90 rounded-lg">Select</button>
+      </div>
+      <div class="flex justify-between items-center lg:gap-2 p-6 lg:rounded-lg">
+        <div>
+          <p class="font-bold">$30/month</p>
+          <p class="text-sm">A huge contribution</p>
+        </div>
+        <button
+          class="w-20 p-2 text-black font-bold text-sm font-medium border border-orange-400 rounded-lg">Select</button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
