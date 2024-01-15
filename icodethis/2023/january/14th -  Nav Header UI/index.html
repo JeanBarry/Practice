@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Nav Header UI</title>
+  <style>
+    .banner {
+      height: 0;
+      overflow: hidden;
+      transition: height 1s ease;
+    }
+
+    .banner.show {
+      height: 18rem;
+    }
+  </style>
+</head>
+<body class="bg-slate-100">
+  <header class="relative md:px-6 p-6 bg-gradient-to-r from-purple-500 to-red-400 w-full md:h-16 flex flex-col md:flex-row justify-between md:items-center">
+    <div class="absolute top-0 left-0 w-full flex md:justify-center justify-end pr-2">
+      <div class="w-16 h-12 bg-transparent border-b border-x border-white/35 rounded-b-lg flex flex-col justify-center items-center text-white">
+        <p class="text-[0.65rem]">DAY</p>
+        <p class="font-bold text-sm">905</p>
+      </div>
+    </div>
+    <p class="text-white font-medium">UIDesignDaily</p>
+    <ul class="flex flex-col md:flex-row gap-6 text-gray-100 text-sm mt-6 md:mt-0">
+      <li><button class="border-b-2 border-b-transparent hover:border-b-white transition-colors ease-in-out duration-200">Designs</button></li>
+      <li><button class="border-b-2 border-b-transparent hover:border-b-white transition-colors ease-in-out duration-200">About</button></li>
+      <li><button class="border-b-2 border-b-transparent hover:border-b-white transition-colors ease-in-out duration-200">License</button></li>
+      <li><button class="border-b-2 border-b-transparent hover:border-b-white transition-colors ease-in-out duration-200">Contact</button></li>
+    </ul>
+  </header>
+  <main class="w-full">
+    <section class="w-full flex flex-col justify-center items-center">
+      <button id="displayButton" class="w-8 h-8 cursor-pointer mt-6 animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="gray" height="100%" width="100%" viewBox="0 0 384 512"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+      </button>
+      <div id="extraBox" class="banner w-full bg-gradient-to-r from-purple-500 to-red-400 flex flex-col justify-center items-center gap-4">
+        <p class="text-white/50 text-xs">DON'T MISS OUT THE LATEST</p>
+        <p class="text-white text-md md:text-lg w-60 md:w-full text-center">Weekly FREE UI resources straight to your inbox</p>
+        <div class="flex md:flex-row flex-col gap-2 items-center">
+          <input class="p-2 h-10 rounded text-sm bg-black/20 text-white" type="text" placeholder="Email address">
+          <button class="bg-transparent border border-white p-1 px-4 h-10 rounded text-white">Stay inspired</button>
+        </div>
+        <p class="text-white/50 text-xs">Commitment issues? Unsubscribe at any time.</p>
+      </div>
+    </section>
+  </main>
+  <script>
+    const extraBox = document.querySelector('#extraBox');
+    const displayButton = document.querySelector('#displayButton');
+
+    displayButton.addEventListener('click', () => {
+      displayButton.classList.add('hidden');
+      extraBox.classList.add('show');
+    });
+  </script>
+</body>
+</html>
