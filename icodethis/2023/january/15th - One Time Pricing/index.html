@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>One Time Pricing</title>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <main class="bg-indigo-50 h-screen flex justify-center items-center">
+    <section class="relative w-[20rem] h-[29rem] bg-white rounded-xl p-8">
+      <div class="flex flex-col gap-1">
+        <p class="font-bold text-2xl">546,00</p>
+        <p class="text-xs">Pay now, later or split up.</p>
+      </div>
+      <button class="mt-6 w-full p-4 bg-gradient-to-r from-green-300 to-cyan-200 rounded text-sm font-bold hover:opacity-90">BUY ONLINE</button>
+      <p class="text-xs mt-3"><span class="font-bold">18 in online storage -</span> can be shipped today</p>
+      <div class="flex flex-col gap-3 mt-3">
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6 flex justify-center items-center p-1 rounded-full bg-indigo-50">
+            <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+          </div>
+          <p class="text-xs font-bold"><span class="underline">Free shipping</span> over NOK 800</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6 flex justify-center items-center p-1 rounded-full bg-indigo-50">
+            <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+          </div>
+          <p class="underline font-bold text-xs">Lightning fast delivery</p>
+        </div>
+      </div>
+      <div class="w-full bg-indigo-50 rounded-lg p-2 mt-4 flex flex-col gap-3">
+        <p class="text-xs font-bold">See how fast you can get the item</p>
+        <div class="flex gap-2">
+          <div class="flex items-center border border-indigo-200 px-2 gap-2 rounded-lg">
+            <label class="w-3 h-3" for="zipcode"><svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></label>
+            <input class="bg-transparent p-2 w-24 text-xs placeholder:text-black placeholder:font-bold font-bold" placeholder="Zip Code" type="text" id="zipcode">
+          </div>
+          <button class="text-xs p-3 w-full bg-white rounded-lg font-bold hover:opacity-80">Check</button>
+        </div>
+      </div>
+      <button class="w-full p-4 bg-gradient-to-r from-indigo-300 to-purple-300 rounded mt-5 text-sm font-bold hover:opacity-90">PICK UP IN STORE</button>
+    </section>
+  </main>
+</body>
+</html>
