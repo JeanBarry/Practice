@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Itinerary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="bg-blue-500 w-full min-h-screen py-10 flex items-center justify-center">
+        <section class="h-fit w-[22rem] bg-white rounded-xl">
+            <div class="w-full h-16 bg-gray-200 rounded-t-xl flex items-center justify-between px-6">
+                <button class="w-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="100%" width="100%" fill="rgb(156 163 175)">
+                        <path
+                            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                    </svg>
+                </button>
+                <p class="text-xl font-bold text-slate-600 cursor-default">Bergen - Budapest</p>
+                <button class="w-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="100%" width="100%" fill="rgb(156 163 175)"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"/></svg>
+                </button>
+            </div>
+            <div class="p-6 relative flex flex-col gap-10">
+                <div class="absolute left-[2.10rem] top-9 w-px bg-gray-300 h-[28rem] z-0"></div>
+                <div class="flex flex-col gap-5 z-10">
+                    <div class="flex items-center gap-4">
+                        <div class="w-5 h-5 rounded-full bg-green-400 p-1 shadow-lg shadow-green-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="100%" width="100%" fill="#FFFFFF">
+                                <path
+                                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                            </svg>
+                        </div>
+                        <p class="text-sky-500 font-bold text-lg">Flight booked</p>
+                    </div>
+                    <div class="ml-9">
+                        <p class="text-xs text-gray-500">Confirmation Code</p>
+                        <p class="font-bold text-lg">6 7 8 9 0 0</p>
+                    </div>
+                    <button class="ml-9 p-2 px-3 bg-sky-400 hover:bg-sky-500 transition-colors ease-in duration-100 w-fit text-xs font-bold rounded-lg text-white">SHOW BOOKING SUMMARY</button>
+                </div>
+                <div class="flex flex-col gap-1 z-10">
+                    <div class="flex items-center gap-4">
+                        <div class="w-5 h-5 rounded-full bg-green-400 p-1 shadow-lg shadow-green-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="100%" width="100%" fill="#FFFFFF">
+                                <path
+                                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                            </svg>
+                        </div>
+                        <p class="text-sky-500 font-bold text-lg">Preparation</p>
+                    </div>
+                    <div class="ml-9">
+                        <p class="text-xs text-gray-600 p-1 px-4 bg-gray-200 w-fit rounded-3xl cursor-default">Priority</p>
+                    </div>
+                    <button class="ml-9 mt-6 p-2 px-3 bg-sky-400 hover:bg-sky-500 transition-colors ease-in duration-100 w-fit text-xs font-bold rounded-lg text-white">ADD SERVICES</button>
+                </div>
+                <div class="flex flex-col gap-1 z-10">
+                    <div class="flex items-center gap-4">
+                        <div class="w-5 h-5 rounded-full bg-green-400 p-1 shadow-lg shadow-green-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="100%" width="100%" fill="#FFFFFF">
+                                <path
+                                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                            </svg>
+                        </div>
+                        <p class="text-sky-500 font-bold text-lg">Check-in</p>
+                    </div>
+                    <div class="ml-9 flex flex-col gap-2">
+                        <p class="text-xs text-gray-500">All Passengers Checked-in</p>
+                        <div class="flex gap-2">
+                            <p class="text-xs text-gray-500 p-1 px-2 bg-gray-200 w-fit rounded-3xl cursor-default">AG</p>
+                            <p class="text-xs text-gray-500 p-1 px-2 bg-gray-200 w-fit rounded-3xl cursor-default">II</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1 z-10">
+                    <div class="flex items-center gap-4">
+                        <div class="w-5 h-5 rounded-full bg-gray-200">
+                        </div>
+                        <p class="text-sky-500 font-bold text-lg">Packing</p>
+                    </div>
+                    <div class="ml-9">
+                        <p class="text-xs text-gray-600">You may upgrade your baggage up to three hours before departure</p>
+                    </div>
+                    <button class="ml-9 mt-3 p-2 px-3 bg-sky-400 hover:bg-sky-500 transition-colors ease-in duration-100 w-fit text-xs font-bold rounded-lg text-white">ADD BAGGAGE</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
