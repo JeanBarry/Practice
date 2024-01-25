@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Landing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .scrollbar::-webkit-scrollbar {
+        width: 18px;
+        height: 18px;
+        }
+        
+        .scrollbar::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: #f7f4ed;
+        }
+        
+        .scrollbar::-webkit-scrollbar-thumb {
+        background: #e0cbcb;
+        border-radius: 100vh;
+        border: 3px solid #f6f7ed;
+        }
+        
+        .scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #c0a0b9;
+        }
+    </style>
+</head>
+<body class="flex w-full min-h-screen">
+    <header class="bg-[#0e2030] min-h-full w-20">
+        <ul class="flex flex-col justify-around items-center h-5/6">
+            <li class="w-full text-center border-t-2 -rotate-90">
+                <button class="text-white">Home</button>
+            </li>
+            <li class="-rotate-90 border-t-2 border-transparent hover:border-t-2 hover:border-slate-400">
+                <button class="text-slate-400">About</button>
+                </li>
+            <li class="-rotate-90 border-t-2 border-transparent hover:border-t-2 hover:border-slate-400">
+                <button class="text-slate-400">
+                    Exhibits
+                </button>
+            </li>
+            <li class="-rotate-90 border-t-2 border-transparent hover:border-t-2 hover:border-slate-400">
+                <button class="w-24 text-slate-400">Group Visits</button>
+            </li>
+            <li class="-rotate-90 border-t-2 border-transparent hover:border-t-2 hover:border-slate-400">
+                <button class="text-slate-400">Contact</button>
+            </li>
+        </ul>
+    </header>
+    <main class="w-full py-4">
+        <div class="w-full flex justify-end items-center h-6 p-8">
+            <button class="hover:opacity-80">
+                <img class="w-6 h-6" src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="">
+            </button>
+        </div>
+        <section class="mt-16 ml-24 flex gap-24">
+            <div class="flex flex-col w-96 gap-6">
+                <p class="text-[3rem] text-[#0e2030] font-bold w-48 leading-[3rem]">Come to your senses</p>
+                <button class="p-3 border border-[#0e2030] hover:bg-[#0e2030] hover:text-white transition-colors ease-in duration-200 w-60">VIEW OUR PRICES</button>
+            </div>
+            <div class="scrollbar overflow-x-scroll h-[26rem] flex items-center gap-6 px-4 snap-x snap-mandatory scroll-smooth">
+                <img class="object-cover h-[23rem] w-[21rem] snap-normal snap-start" src="https://i.pinimg.com/originals/37/cf/73/37cf7319e281c6e34f93547f34ff57be.jpg" alt="">
+                <img class="object-cover h-[23rem] w-[21rem] snap-normal snap-center" src="https://www.newcitybrazil.com/wp-content/uploads/2020/01/cruz-diez-chromosaturation-1965-2004-exhibition-cruz-diez-color-in-space-and-time-mfah-houston-2011-photo-cruz-diez-art-foundation3-scaled.jpg" alt="">
+                <img class="object-cover h-[23rem] w-[21rem] snap-normal snap-center" src="https://grouptourmagazine.com/wp-content/uploads/2019/08/New-Nature-ARTECHOUSE-by-Daniel-Garcia9.jpg" alt="">
+                <img class="object-cover h-[23rem] w-[21rem] snap-normal snap-center" src="https://www.vmcdn.ca/f/files/via/images/arts/vangogh-immersive-experience-vancouver-2020-(laurencelabat).jpg" alt="">
+            </div>
+        </section>
+        <footer class="w-full pl-24 py-10 flex gap-24 items-center">
+            <div class="flex flex-col gap-4">
+                <p class="w-52 text-sm text-gray-500">"Not just fin but really cool experience! Lovely stuff, exited to show you it all and lots things to see and try!"</p>
+                <p class="text-gray-700 text-sm font-bold">Rivers of dreams, Florida</p>
+            </div>
+            <div class="relative bg-gray-100 w-full h-20 flex gap-12">
+                <p class="text-[#0e2030] font-bold absolute left-4 -top-3.5 text-lg">WORKING HOURS</p>
+                <div class="flex flex-col justify-center ml-4">
+                    <p class="text-xs text-[#0e2030] font-bold">Monday - Thursday</p>
+                    <p class="text-xs">10:00 - 22:00</p>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-xs text-[#0e2030] font-bold">Monday - Thursday</p>
+                    <p class="text-xs">10:00 - 22:00</p>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-xs text-[#0e2030] font-bold">Monday - Thursday</p>
+                    <p class="text-xs">10:00 - 22:00</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
