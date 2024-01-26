@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          keyframes: {
+            fadeInFromTop: {
+              '0%': {
+                opacity: '0',
+                transform: 'translateY(-2rem)'
+              },
+              '50%': {
+                opacity: '25%',
+              },
+              '100%': {
+                opacity: '100%',
+                transform: 'translateY(0rem)'
+              }
+            }
+          },
+          animation: {
+            fadeInFromTop: 'fadeInFromTop 1s ease-in-out'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-slate-300">
+  <main class="min-h-screen w-full flex flex-col justify-center items-center gap-6 py-24">
+
+    <section class="bg-white rounded-2xl pt-14 pb-6 px-20 relative flex items-center justify-center shadow-md">
+      <img class="w-28 h-28 rounded-full object-cover absolute -top-1/2 translate-y-1/4"
+        src="https://img.freepik.com/premium-photo/woman-her-30s-confident-business-portrait-generative-ai_971989-6935.jpg"
+        alt="woman portrait">
+      <div class="mt-6 flex flex-col items-center justify-center">
+        <p id="profile-name" class="text-xl font-bold">Jenn Elodie</p>
+        <p>UX Consultant</p>
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row justify-center items-center gap-4">
+
+      <div id="user-window" class="hidden bg-white rounded-3xl p-8 flex-col gap-4 h-fit w-[20.5rem] order-2">
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="100%" width="100%">
+              <path
+                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+            </svg>
+          </div>
+          <p class="font-bold text-lg">Conections</p>
+        </div>
+        <div class="text-sm flex flex-col justify-center gap-4">
+          <div class="flex gap-4 items-center">
+            <img class="w-14 h-14 rounded-full object-cover" src="https://img.freepik.com/premium-photo/confidence-man-smile-office-businessman-professional-portrait-company-executive-business-indoors-generative-ai_163305-226170.jpg" alt="Robert">
+            <p class="font-bold">Robert Chen</p>
+          </div>
+          <div class="flex gap-4 items-center">
+            <img class="w-14 h-14 rounded-full object-cover" src="https://img.freepik.com/premium-photo/cute-business-woman-photo-ai-generated_980993-3517.jpg" alt="Alexia">
+            <p class="font-bold">Alexia Ramirez</p>
+          </div>
+          <div class="flex gap-4 items-center">
+            <img class="w-14 h-14 rounded-full object-cover" src="https://img.freepik.com/premium-photo/happy-business-woman-showcase-finfluencer-confidence-charisma-with-generative-ai_1375-10867.jpg" alt="Natalia">
+            <p class="font-bold">Natalia Bennett</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="screen-window" class="flex bg-white rounded-3xl p-8 flex-col gap-4 h-[17rem] w-[20.5rem] order-2">
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="100%" width="100%">
+              <path
+                d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" />
+            </svg>
+          </div>
+          <p class="font-bold text-lg">App permissions</p>
+        </div>
+        <div class="text-sm flex flex-col justify-center gap-4">
+          <p class="p-2 bg-slate-100 rounded border border-slate-300"><span class="font-bold">33 apps</span> have access
+            to your data</p>
+          <p class="w-56">Manage which apps have access to your data. You can revoke permission whenever you want.</p>
+          <button
+            class="bg-gray-700 text-white p-3 w-fit rounded hover:bg-gray-800 transition-colors ease-in duration-100">Change
+            app permissions</button>
+        </div>
+      </div>
+
+      <div id="notifications-window"
+        class="hidden bg-white rounded-3xl p-8 flex-col gap-4 h-[17rem] w-[20.5rem] order-2">
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6">
+            <svg class="rotate-45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="100%" width="100%">
+              <path
+                d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112v25.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V208c0-61.9 50.1-112 112-112zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z" />
+            </svg>
+          </div>
+          <p class="font-bold text-lg">Notifications</p>
+        </div>
+        <div class="text-sm flex flex-col gap-3">
+          <p id="notifications-description">You have <span class="font-bold">2</span> new notifications</p>
+          <div id="notifications" class="flex flex-col gap-3">
+            <div class="p-2 bg-gray-100 rounded w-full">New client feedback received</div>
+            <div class="p-2 bg-gray-100 rounded w-full">Upcoming meeting - <span class="font-bold">11:45 am</span></div>
+          </div>
+          <button
+            id="dismiss-notifications"
+            class="bg-gray-700 text-white p-3 w-full rounded hover:bg-gray-800 transition-colors ease-in duration-100">Dismiss</button>
+        </div>
+      </div>
+
+      <div id="settings-window"
+        class="hidden bg-white rounded-3xl p-8 flex-col gap-4 h-[20rem] w-[20.5rem] relative order-2">
+        <div id="confirmation"
+          class="hidden animate-fadeInFromTop absolute self-center w-44 h-20 bg-white border-gray-400 border flex-col items-center justify-center rounded-xl gap-2">
+          <p class="font-bold text-sm">Changes Saved!</p>
+          <div class="w-6 h-6 rounded-full p-1 bg-green-500">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="100%" width="100%">
+              <path
+                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="100%" width="100%">
+              <path
+                d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
+            </svg>
+          </div>
+          <p class="font-bold text-lg">Settings</p>
+        </div>
+        <div class="text-sm flex flex-col gap-3">
+          <div class="font-bold">Edit profile</div>
+          <div>
+            <label>Name:</label>
+            <input id="name-input" class="border-black border p-2 rounded w-full" type="text" value="Jenn Elodie" maxlength="15" placeholder="Name" required>
+          </div>
+          <div>
+            <label>Email:</label>
+            <input class="bg-gray-100 p-2 rounded w-full" type="text" value="jenn.elodie@corp.com" disabled>
+          </div>
+          <button
+            id="save-settings"
+            class="bg-gray-700 text-white p-3 w-full rounded hover:bg-gray-800 transition-colors ease-in duration-100">Save</button>
+        </div>
+      </div>
+
+      <div class="bg-white/25 p-3 rounded-[2.5rem] flex md:flex-col order-1 md:order-3 gap-2">
+        <button id="user-button" class="w-14 h-14 rounded-full bg-white/75 p-4 opacity-50 hover:opacity-75">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="100%" width="100%">
+            <path
+              d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+          </svg>
+        </button>
+        <button id="screen-button" class="w-14 h-14 rounded-full bg-white/75 p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="100%" width="100%">
+            <path
+              d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V352H64V64H512z" />
+          </svg>
+        </button>
+        <button id="notifications-button"
+          class="w-14 h-14 rounded-full bg-white/75 p-4 opacity-50 relative hover:opacity-75">
+          <div class="notification-icon absolute w-6 h-6 bg-amber-400 rounded-full top-0 right-0 animate-ping"></div>
+          <div class="notification-icon absolute w-6 h-6 flex items-center justify-center bg-amber-400 rounded-full top-0 right-0">
+            <p class="font-bold">2</p>
+          </div>
+          <svg class="rotate-45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="100%" width="100%">
+            <path
+              d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112v25.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V208c0-61.9 50.1-112 112-112zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z" />
+          </svg>
+        </button>
+        <button id="settings-button"
+          class="w-14 h-14 rounded-full rotate-45 bg-white/75 p-4 opacity-50 hover:opacity-75">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="100%" width="100%">
+            <path
+              d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
+          </svg>
+        </button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
