@@ -1,0 +1,17 @@
+.bell-icon:hover {
+  fill: #000000;
+}
+
+.twitter-icon {
+  fill: rgb(96 165 250);
+}
+
+.facebook-icon {
+  fill: rgb(37 99 235);
+}
+
+.bell-icon,
+.facebook-icon:hover,
+.twitter-icon:hover {
+  fill: #FFFFFF;
+}
