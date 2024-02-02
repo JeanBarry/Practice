@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Components</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="bg-gray-100 w-full min-h-screen relative flex flex-col md:p-10 p-4 -z-20 justify-center items-center gap-4 md:gap-10 md:justify-start">
+        <div class="hidden md:block bg-gray-200 w-2/3 h-full absolute bottom-0 left-1/2 -translate-x-1/2 -z-10"></div>
+        <section class="flex bg-white rounded-md flex-col gap-4 w-80 items-center p-6 h-fit">
+            <img class="w-full rounded-sm" src="https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-0876.jpg" alt="headphones">
+            <p class="text-lg font-bold">Going Wireless With Your Headphones</p>
+            <div class="flex gap-3 w-full">
+                <img class="w-14 h-14 rounded-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVUZ9qpKWdPLrnp4PX4-snADqpRwJgJUXuO_P9-zKzew&s" alt="avatar">
+                <div class="flex flex-col justify-center text-xs">
+                    <p class="font-bold">Cameron Russell</p>
+                    <p>Feb 15 2021</p>
+                </div>
+            </div>
+            <p class="text-sm w-[31ch]">The first category of the free backgrounds has plenty of options, but the number of backgrounds is limited to a few hundreds.</p>
+        </section>
+        <section class="flex bg-white rounded-md flex-col gap-4 w-80 md:w-[27rem] items-center md:items-start p-6 md:pr-32 h-fit relative z-20">
+            <div class="w-10 h-10 rounded-full p-3 bg-gray-100 absolute z-10 top-2 right-2 md:top-4 md:right-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="100%" width="100%" fill="rgb(75 85 99)">
+                    <path
+                        d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
+                </svg>
+            </div>
+            <p class="text-lg font-bold md:pl-2">Choose Location</p>
+            <ul class="grid grid-cols-2 gap-4 md:gap-8">
+                <li class="px-4 p-2 flex items-center rounded-sm">
+                    <p>DE - Germany</p>
+                </li>
+                <li class="px-4 p-2 flex items-center bg-gray-50 rounded-sm">
+                    <p>NO - Norway</p>
+                </li>
+                <li class="px-4 p-2 flex items-center rounded-sm">
+                    <p>FI - Suomi</p>
+                </li>
+                <li class="px-4 p-2 flex items-center rounded-sm">
+                    <p>EU - GLOBAL</p>
+                </li>
+                <li class="px-4 p-2 flex items-center rounded-sm">
+                    <p>DK - Denmark</p>
+                </li>
+                <li class="px-4 p-2 flex items-center rounded-sm">
+                    <p>SE - Sweden</p>
+                </li>
+            </ul>
+        </section>
+        <section class="flex bg-white rounded-md items-center gap-4 w-80 md:w-fit p-6 h-fit">
+            <img class="w-24 h-24 md:w-36 md:h-36 object-cover rounded-sm" src="https://img.freepik.com/free-photo/portrait-business-woman-with-enthusiastic-face-expression-smiling-looking-confident-standing-s_1258-88087.jpg" alt="headphones">
+            <div class="flex flex-col gap-2 md:gap-4">
+                <div>
+                    <p class="font-bold">Lizzie Bennett</p>
+                    <p class="text-sm">General Manager</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-4 h-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="100%" width="100%" fill="rgb(75 85 99)">
+                            <path
+                                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                        </svg>
+                    </div>
+                    <p class="text-sm">Lizzie.bennett<br class="md:hidden">@company.com</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-4 h-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="100%" width="100%" fill="rgb(75 85 99)">
+                            <path
+                                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                        </svg>
+                    </div>
+                    <p class="text-sm">+47 589 55 458</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
