@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promote Link</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="w-full min-h-screen flex flex-col gap-4 justify-center items-center bg-blue-50 text-violet-800 py-6 relative z-0">
+        <div class="relative flex flex-col gap-4 md:w-80 md:h-44 z-0">
+            <section class="bg-white rounded-2xl flex flex-col gap-4 p-6 w-80 md:w-96 md:p-12 md:absolute -top-44 -right-28 z-20 shadow-lg">
+            <div class="flex flex-col">
+                <p class="font-bold text-lg">Create a Link</p>
+                <p class="text-sm">Promote any brand with a simple link</p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <select class="w-full border border-slate-300 bg-white text-sm rounded p-3" name="themes" id="theme-selector">
+                    <option value="premium-themes">Premium Themes</option>
+                    <option value="light-themes">Light Themes</option>
+                    <option value="dark-themes">Dark Themes</option>
+                </select>
+                <input class="w-full border border-slate-300 bg-white text-sm p-3 rounded placeholder:text-violet-300" type="text" placeholder="Enter a website URL">
+            </div>
+            <div class="flex justify-between gap-2 text-sm">
+                <button class="w-1/2 border border-violet-800 bg-violet-800 text-white rounded-lg p-2 hover:opacity-80 transition-opacity">Create</button>
+                <button class="w-1/2 border border-violet-800 rounded-lg p-2 hover:opacity-70 transition-opacity">Advanced</button>
+            </div>
+        </section>
+        <section class="bg-white rounded-2xl flex flex-col gap-4 p-6 w-80 md:w-96 md:p-12 md:absolute -bottom-56 -left-40 z-10 shadow-lg">
+            <div>
+                <p class="text-lg font-bold">Promote</p>
+                <p class="text-sm mt-2">Use this link to promote.</p>
+                <p class="text-sm w-64 md:w-full">Link updates may take up to 5 minutes to propagate.</p>
+            </div>
+            <div class="flex gap-2 items-center">
+                <select class="w-22 border border-slate-300 bg-white text-sm rounded p-3 cursor-pointer" name="protocol" id="protocol-selector">
+                    <option value="https">https://</option>
+                    <option value="http">http://</option>
+                </select>
+                <input class="w-full border border-slate-300 bg-white text-sm p-3 rounded placeholder:text-violet-300" type="text" value="Premium Themes" disabled>
+            </div>
+            <div>
+                <p>Share</p>
+                <div class="flex gap-2 items-center">
+                    <button class="w-8 h-8 rounded hover:opacity-80">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#3b5998">
+                            <path
+                                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
+                        </svg>
+                    </button>
+                    <button class="w-8 h-8 rounded hover:opacity-80">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+        </section>
+        </div>
+        
+        <div class="hidden md:block w-[45rem] h-[45rem] absolute -z-10">
+            <div class="w-full h-full rounded-full border-[8px] border-violet-100 p-16">
+                <div class="w-full h-full rounded-full border-[12px] border-violet-100 p-8">
+                    <div class="w-full h-full rounded-full bg-violet-100"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
