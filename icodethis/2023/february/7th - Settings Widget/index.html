@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Widget</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input[type="radio"] {
+            border-radius: 100%;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            appearance: none;
+            border: 1px #C4C4C4 solid;
+        }
+
+        input[type="radio"]:checked, input[type="checkbox"]:checked {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="w-full min-h-screen bg-zinc-100 flex justify-center items-center py-8">
+        <div class="flex flex-col justify-center gap-6">
+            <section class="bg-white rounded-sm p-10 flex flex-col gap-4 w-80 text-sm shadow-lg">
+                <p class="text-lg font-bold">Customize your widget</p>
+                <div class="flex items-center gap-2">
+                    <input class="w-6 h-6" type="radio" name="display" id="contact" checked>
+                    <label for="contact">Display contact button</label>
+                </div>
+                <div class="flex items-center gap-2">
+                    <input class="w-6 h-6" type="radio" name="display" id="email">
+                    <label for="email">Hide email address</label>
+                </div>
+                <div class="flex items-center gap-2">
+                    <input class="w-6 h-6" type="radio" name="display" id="publish">
+                    <label for="publish">Display publish button</label>
+                </div>
+                <div class="flex justify-between gap-2">
+                    <button class="rounded bg-gray-200 hover:opacity-80 font-light p-3 w-1/2">Cancel</button>
+                    <button class="rounded bg-amber-400 hover:opacity-80 font-light p-3 w-1/2">Save</button>
+                </div>
+            </section>
+            <section class="bg-white rounded-sm p-10 flex flex-col gap-4 w-80 text-sm shadow-lg">
+                <p class="text-lg font-bold">Other</p>
+                <div class="flex items-center gap-2">
+                    <input class="w-6 h-6" type="checkbox" name="notifications" id="in-app">
+                    <label for="in-app">Turn on in-app notifications.</label>
+                </div>
+                <div class="flex items-center gap-2">
+                    <input class="w-6 h-6" type="checkbox" name="notifications" id="weekly" checked>
+                    <label class="w-48" for="weekly">Receive weekly newsletters and other offers.</label>
+                </div>
+            </section>
+            <section class="rounded-sm flex flex-col gap-4 w-80 text-sm items-end">
+                <button class="w-20 h-20 bg-white rounded-sm flex items-center justify-center p-6 hover:opacity-80">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z" />
+                    </svg>
+                </button>
+                <div class="rounded-sm bg-white p-4 text-sm w-60 flex flex-col gap-2 shadow-lg">
+                    <button class="p-4 hover:bg-gray-50">Edit your list</button>
+                    <button class="p-4 bg-gray-100 rounded-sm">Account settings</button>
+                    <button class="p-4 hover:bg-gray-50">View your profile</button>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
