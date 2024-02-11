@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="bg-purple-50 w-full min-h-screen flex items-center justify-center">
+        <section class="bg-white rounded-2xl w-72 flex flex-col gap-4 items-center justify-center p-8 py-12">
+            <div class="h-20 w-20 rounded-full flex flex-col items-center justify-center border border-gray-300 gap-1">
+                <div class="w-6 h-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="rgb(30,58,138)">
+                        <path
+                            d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+                    </svg>
+                </div>
+                <p class="font-bold text-xs">BASIC</p>
+            </div>
+            <div class="flex flex-col gap-0.5">
+                <div class="flex gap-1 items-center">
+                    <p class="text-xs">KR</p>
+                    <p class="text-2xl font-bold">199</p>
+                </div>
+                <p class="text-xs">NOK/MONTH</p>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-2">
+                <div class="flex items-center gap-1">
+                    <button class="border-gray-300 border rounded-xl p-1 px-3 hover:bg-blue-900/50 hover:text-white transition-colors">10</button>
+                    <button class="border-gray-300 bg-blue-900 text-white border rounded-xl p-1 px-3">25</button>
+                    <button class="border-gray-300 border rounded-xl p-1 px-3 hover:bg-blue-900/50 hover:text-white transition-colors">50</button>
+                    <button class="border-gray-300 border rounded-xl p-1 px-3 hover:bg-blue-900/50 hover:text-white transition-colors">100</button>
+                </div>
+                <p class="text-xs">Downloads per month</p>
+            </div>
+            <button class="mt-2 text-sm bg-blue-900 p-3 w-full text-white rounded shadow-lg hover:opacity-80 transition-opacity">Subscribe</button>
+        </section>
+
+    </main>
+</body>
+
+</html>
