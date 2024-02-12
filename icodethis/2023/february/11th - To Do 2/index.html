@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input[type="checkbox"] {
+            appearance: none;
+            background-color: #FFF;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.25rem;
+            border: 1px solid black;
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: #5e99f7;
+        }
+
+        input[type="checkbox"][disabled]:checked {
+            background-color: #CFCFCF;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main class="bg-blue-50 w-full min-h-screen flex justify-center items-center">
+        <section class="bg-white rounded-xl p-8 w-64 relative">
+            <button class="w-6 h-6 absolute top-4 right-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#cfcfcf">
+                    <path
+                        d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z" />
+                </svg>
+            </button>
+            <button class="hover:opacity-80 transition-opacity flex items-center justify-center p-1 px-4 text-white bg-purple-900 absolute bottom-4 right-4 rounded-xl">+</button>
+            <p class="text-xl font-bold">Groceries</p>
+            <p class="text-xs text-gray-400">Shared with <span class="underline">1 person</span></p>
+            <ul class="flex flex-col gap-1 mt-4">
+                <li class="flex items-center gap-2"><input class="w-6 h-6 rounded-full" type="checkbox" name="todos">Eggs
+                </li>
+                <li class="flex items-center gap-2"><input class="w-6 h-6 rounded-full" type="checkbox" name="todos">Tomatoes
+                </li>
+                <li class="flex items-center gap-2"><input class="w-6 h-6 rounded-full" type="checkbox" name="todos">Avocado
+                </li>
+            </ul>
+            <p class="text-xs text-gray-400 mt-4">COMPLETED (4)</p>
+            <ul class="flex flex-col gap-2 mt-2">
+                <li class="flex items-center gap-2"><input class="w-6 h-6 rounded-full" type="checkbox" name="todos" disabled checked="true">Egg noodles
+                </li>
+                <li class="flex items-center gap-2"><input class="w-6 h-6 rounded-full" type="checkbox" name="todos" disabled checked="true">Scampi
+                </li>
+                <li class="flex items-center gap-2"><input class="w-6 h-6 rounded-full bg-red-20" type="checkbox" name="todos" disabled checked="true">Orange juice
+                </li>
+                <li class="flex items-center gap-2"><input class="w-6 h-6 rounded-full" type="checkbox" name="todos" disabled checked="true">Apples
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
