@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input[type="checkbox"] {
+            appearance: none;
+            border: 1px solid rgb(195,195,209);
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 0.25rem;
+            background-color: #FFFFFF;
+            padding: 0.25rem;
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: rgb(185 28 28);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="w-full min-h-screen flex items-center justify-center bg-pink-50/75">
+        <section class="w-96 bg-white rounded-xl p-10 flex flex-col items-center gap-3">
+            <img class="w-24 h-24 border-[8px] border-gray-100 bg-pink-200 rounded-full object-cover"
+                src="https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1707696000&semt=ais"
+                alt=""
+            ></img>
+            <p class="text-sm text-gray-600">Tina V. invited you to join</p>
+            <p class="font-bold">Channel name</p>
+            <p class="p-2 px-4 bg-gray-100 rounded text-sm">46K Active users - 78K Total users</p>
+            <div class="mt-4 w-full">
+                <label class="text-sm text-gray-600" for="username">Username</label>
+                <input class="text-sm placeholder:text-gray-600 p-3 w-full border border-gray-400 rounded" type="text" placeholder="How do you like people to call you?" id="username">
+            </div>
+            <div class="flex gap-2 items-start w-full mt-4">
+                <input type="checkbox" id="agree">
+                <label class="text-sm w-56" for="agree">I have read and agree to the <span class="border-b border-red-600 text-red-700 cursor-pointer">Terms of service</span> and <span class="border-b border-red-600 text-red-700 cursor-pointer">Privacy policy.</span></label>
+            </div>
+            <button class="text-white p-4 w-full bg-red-800 rounded mt-4 hover:opacity-80 transition-opacity">Continue</button>
+            <p class="mt-8 text-xs border-b border-red-600 text-red-700 cursor-pointer hover:opacity-80 transition-opacity">Already have an account</p>
+        </section>
+    </main>
+</body>
+
+</html>
