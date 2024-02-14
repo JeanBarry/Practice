@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile UI Kit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="py-4 w-full min-h-screen bg-sky-900 flex items-center justify-center z-0">
+        <div class="w-[60vh] h-[60vh] opacity-20 bg-blue-500 rounded-full absolute z-10 sm:block hidden"></div>
+        <div class="flex flex-col items-center justify-center gap-4 z-20">
+            <section class="bg-white rounded-lg p-6 flex flex-col gap-4">
+                <div class="flex gap-4 items-center">
+                    <div class="border-blue-100 border-[8px] w-16 h-16 rounded-full flex items-center justify-center p-2.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="100%" height="100%">
+                            <path
+                                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="text-sm text-gray-700">App running &#x2022; last 7 days</p>
+                        <p class="text-2xl font-bold">78</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <div class="border-blue-100 border-[8px] w-16 h-16 rounded-full flex items-center justify-center p-2.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+                            <path
+                                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="text-sm text-gray-700">App running &#x2022; last 7 days</p>
+                        <p class="text-2xl font-bold">78</p>
+                    </div>
+                </div>
+                <button class="bg-sky-900 text-white p-3 rounded-lg hover:opacity-80 transition-opacity">CUSTOMIZE</button>
+            </section>
+            <section class="bg-white rounded-lg p-8 flex flex-col gap-4 items-center">
+                <div class="relative w-fit h-fit rounded-full bg-red-200 flex items-center justify-center">
+                    <img class="w-24 h-24 border-sky-100 border-[8px] rounded-full object-cover" src="https://img.freepik.com/free-photo/beauty-portrait-female-face_93675-132045.jpg" alt="woman">
+                    <div class="absolute bg-sky-900 p-1 px-2 text-sm rounded-3xl text-white -bottom-2">PRO</div>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <p class="text-lg font-semibold">Kelvin Costa</p>
+                    <p class="text-gray-500 text-center text-sm">@costa</p>
+                </div>
+                <p class="text-sm mt-6">140 followers &#x2022; 207 following</p>
+            </section>
+            <section class="bg-white rounded-lg p-8 flex justify-between w-fit items-center">
+                <div class="flex gap-2">
+                    <div class="w-8 h-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path
+                                d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z" />
+                        </svg>
+                    </div>
+                    <p class="font-bold text-xl">509 K</p>
+                </div>
+                <div class="relative flex items-center bg-red-200 w-44 h-fit">
+                    <img class="absolute right-0 w-10 h-10 rounded-full object-cover border-2 border-white" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d29tYW4lMjBwcm9maWxlfGVufDB8fDB8fHww" alt="person">
+                    <img class="absolute right-6 w-10 h-10 rounded-full object-cover border-2 border-white" src="https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?size=338&ext=jpg&ga=GA1.1.87170709.1707696000&semt=ais" alt="person">
+                    <img class="absolute right-12 w-10 h-10 rounded-full object-cover border-2 border-white" src="https://images.unsplash.com/photo-1524666041070-9d87656c25bb?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFsZXxlbnwwfHwwfHx8MA%3D%3D" alt="person">
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
