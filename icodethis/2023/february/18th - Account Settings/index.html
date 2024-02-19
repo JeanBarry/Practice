@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="w-full min-h-screen flex flex-col gap-4 items-center justify-center bg-gray-100">
+        <section class="bg-white rounded flex flex-col gap-4 p-8 w-[40rem]">
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="rgb(192 132 252)">
+                        <path
+                            d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0z" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-2xl">Login and security</p>
+                    <p class="text-sm text-gray-400">Add or remove email addresses on your account.</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <p class="font-bold text-sm text-gray-600">Email addresses</p>
+                <div class="flex items-center justify-between">
+                    <p class="text-sm">johnjohnson@email.com</p>
+                    <button class="p-1 w-20 bg-gray-200 text-xs font-bold text-gray-500 hover:opacity-80">PRIMARY</button>
+                </div>
+                <hr>
+                <div class="flex items-center justify-between">
+                    <p class="text-sm">johnjohnson@email.com</p>
+                    <div class="w-20 flex justify-center items-center">
+                        <button class="h-5 w-5 hover:opacity-80">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#727272">
+                            <path d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <button class="flex gap-2 items-center hover:opacity-80">
+                    <div class="w-8 h-8 p-2 border border-gray-320 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fcba03">
+                            <path
+                                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                        </svg>
+                    </div>
+                    <p class="text-yellow-400 font-bold text-sm">Add email address</p>
+                </button>
+            </div>
+        </section>
+        <section class="bg-white rounded flex flex-col gap-4 p-8 w-[40rem]">
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#93b559">
+                        <path
+                            d="M80 0C44.7 0 16 28.7 16 64V448c0 35.3 28.7 64 64 64H304c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H80zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H160c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-2xl">Phone numbers</p>
+                    <p class="text-sm text-gray-400">Add a phone number in case you have trouble signing in.</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="w-full flex flex-col items-center gap-4 my-8">
+                    <p class="font-bold text-sm text-gray-600">You haven't added any phone numbers yet.</p>    
+                    <p class="text-sm w-[57ch] text-center">Your phone numbers helps us keep your account secure. It also helps people who already have your number discover and connect with you.</p>
+                </div>
+                <button class="flex gap-2 items-center hover:opacity-80">
+                            <div class="w-8 h-8 p-2 border border-gray-320 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fcba03">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                </svg>
+                            </div>
+                            <p class="text-yellow-400 font-bold text-sm">Add email address</p>
+                        </button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
