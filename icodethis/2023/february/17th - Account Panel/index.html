@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <main class="w-full min-h-screen flex justify-center items-center bg-sky-900">
+        <section class="bg-sky-800 shadow-lg flex flex-col justify-center items-center p-8">
+            <div class="flex flex-col gap-4">
+                <p class="text-2xl font-bold text-white">Switch Account</p>
+                <ul class="flex gap-4 items-center">
+                    <li>
+                        <button>
+                            <img class="w-24 h-24 rounded-full object-cover shadow-sm hover:opacity-80" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW75MNaDjNbQshuJhNXrwyht7xZRDChsmkzZT3JoKeQgGmWv5iKLxNVjZqxOxXdqZDZv8" alt="portrait">
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <img class="w-24 h-24 rounded-full object-cover shadow-sm hover:opacity-80" src="https://media.istockphoto.com/id/1200677760/photo/portrait-of-handsome-smiling-young-man-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=g_ZmKDpK9VEEzWw4vJ6O577ENGLTOcrvYeiLxi8mVuo=" alt="portrait">
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <img class="w-24 h-24 rounded-full object-cover shadow-sm hover:opacity-80" src="https://blenderartists.org/uploads/default/original/4X/8/0/7/8074d9526945dbe0c79bbf17f7cb26df8423dfc2.jpeg" alt="portrait">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="w-6 h-6 flex items-center justify-center hover:opacity-80">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="#05284d">
+                                <path
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+                <button class="my-4 p-3 bg-sky-500 text-white font-bold w-fit hover:opacity-80">Add account</button>
+                <hr class="h-px bg-sky-900 border-0">
+                <ul class="flex flex-col gap-3 text-white text-lg">
+                    <li>
+                        <button class="py-3 hover:opacity-80">Account settings</button>
+                    </li>
+                    <li>
+                        <button class="py-3 hover:opacity-80">Subscription</button>
+                    </li>
+                    <li>
+                        <button class="py-3 hover:opacity-80">Support</button>
+                    </li>
+                    <li>
+                        <button class="py-3 hover:opacity-80">Sign Out</button>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
