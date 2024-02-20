@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="w-full min-h-screen flex justify-center items-center bg-[#1c1e33]">
+        <div class="lg:w-80 lg:h-44 bg-transparent lg:bg-[#e94072] relative flex flex-col justify-center gap-2">
+            <section class="bg-[#262743] flex flex-col justify-between p-8 text-white h-52 rounded lg:absolute -left-80 -top-32">
+                <p class="text-lg">Your plan</p>
+                <p class="text-3xl">Professional</p>
+                <div class="text-sm flex items-center gap-4">
+                    <button class="bg-[#e94072] p-2 w-36 rounded hover:opacity-80 transition-opacity">Upgrade Plan</button>
+                    <button class="text-gray-500 underline p-2 w-36 rounded hover:opacity-80 transition-opacity">Cancel Plan</button>
+                </div>
+            </section>
+            <section class="bg-[#262743] flex flex-col gap-4 p-8 text-white rounded lg:absolute -right-80">
+                <p class="text-lg">Invoice history</p>
+                <ul class="mt-4 flex flex-col gap-6">
+                    <li class="flex items-center gap-14">
+                        <p>June 26,2021</p>
+                        <p>$25.00</p>
+                    </li>
+                    <li class="flex items-center gap-14">
+                        <p>June 26,2021</p>
+                        <p>$25.00</p>
+                        <a class="text-[#e94072] hover:opacity-80" href="#">Download PDF</a>
+                    </li>
+                    <li class="flex items-center gap-14">
+                        <p>June 26,2021</p>
+                        <p>$25.00</p>
+                    </li>
+                    <li class="flex items-center gap-14">
+                        <p>June 26,2021</p>
+                        <p>$25.00</p>
+                    </li>
+                    <li class="flex items-center gap-14">
+                        <p>June 26,2021</p>
+                        <p>$25.00</p>
+                    </li>
+                </ul>
+                <button class="mt-6 p-3 border border-indigo-300 text-sm w-36 rounded hover:bg-[#e94072] hover:border-[#e94072] transition-colors">Show all invoices</button>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
