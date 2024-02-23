@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock In App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="w-full min-h-screen flex items-center gap-6 justify-center bg-gradient-to-t bg-[#550202]">
+        <section class="w-72 h-[32rem] bg-gray-100 rounded-xl flex flex-col">
+            <div class="px-6 bg-red-400 flex items-center justify-between h-16 rounded-t-xl">
+                <button class="w-6 h-6 flex items-center justify-center -rotate-90 hover:opacity-80">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#FFFFFF">
+                        <path
+                            d="M350 177.5c3.8-8.8 2-19-4.6-26l-136-144C204.9 2.7 198.6 0 192 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26s12.5 14.5 22 14.5h88l0 192c0 17.7-14.3 32-32 32H32c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32l80 0c70.7 0 128-57.3 128-128l0-192h88c9.6 0 18.2-5.7 22-14.5z" />
+                    </svg>
+                </button>
+                <button class="w-6 h-6 flex items-center justify-center hover:opacity-80">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#FFFFFF">
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="p-6 flex flex-col items-center w-full h-full">
+                <p class="text-gray-400 underline underline-offset-4">YOUR HOURS</p>
+                <div class="w-20 h-20 flex items-center justify-center mt-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="rgb(156 163 175)" height="100%" width="100%">
+                        <path
+                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                    </svg>
+                </div>
+                <p class="mt-2 w-36 text-gray-400 text-center">You haven't logged any hours yet</p>
+                <div class="w-full h-full flex justify-end items-end">
+                    <button class="bg-red-300 rounded-full flex items-center text-white justify-center text-[4rem] font-light w-14 h-14 hover:opacity-80 transition-opacity">+</button>
+                </div>
+            </div>
+        </section>
+        <section class="w-72 h-[32rem] bg-gray-100 rounded-xl flex flex-col">
+            <div class="px-6 bg-red-400 flex items-center justify-between h-16 rounded-t-xl">
+                <button class="w-6 h-6 flex items-center justify-center -rotate-90 hover:opacity-80">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#FFFFFF">
+                        <path
+                            d="M350 177.5c3.8-8.8 2-19-4.6-26l-136-144C204.9 2.7 198.6 0 192 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26s12.5 14.5 22 14.5h88l0 192c0 17.7-14.3 32-32 32H32c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32l80 0c70.7 0 128-57.3 128-128l0-192h88c9.6 0 18.2-5.7 22-14.5z" />
+                    </svg>
+                </button>
+                <button class="w-6 h-6 flex items-center justify-center hover:opacity-80">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#FFFFFF">
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="p-2 flex flex-col items-center w-full h-full">
+                <p class="mt-4 text-gray-400 underline underline-offset-4">YOUR HOURS</p>
+                <div class="mt-4 w-full flex flex-col bg-white rounded shadow-lg p-2 gap-2">
+                    <p class="font-bold text-gray-400">Select hour type</p>
+                    <select class="appearance-none p-3 w-full bg-white border border-gray-400 rounded" name="hours" id="hours">
+                        <option class="" value="Overworked hours">Overworked hours</option>
+                    </select>
+                    <div class="flex items-center justify-between gap-1">
+                        <input class="p-2 w-1/2 border border-gray-400 rounded text-center text-xl text-gray-400 font-bold" type="text" value="1">
+                        <button class="p-2 w-1/4 bg-gray-100 h-full rounded text-lg hover:opacity-80">+</button>
+                        <button class="p-2 w-1/4 bg-gray-100 h-full rounded text-lg hover:opacity-80">-</button>
+                    </div>
+                    <div class="flex items-center gap-2 my-6">
+                        <button class="bg-gray-100 p-2 w-32 rounded hover:opacity-80">Cancel</button>
+                        <button class="bg-red-400 p-2 w-32 text-white rounded hover:opacity-80">Save</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
